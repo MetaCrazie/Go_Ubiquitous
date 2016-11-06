@@ -52,4 +52,4 @@ the License.
 
 API Key
 -------
-Add your OpenWeatherMap API key as MyOpenWeatherMapApi=<YOUR_KEY> in gradle.properties.
+Add your OpenWeatherMap API key as MyOpenWeatherMapApi= < YOUR_KEY > in gradle.properties.
