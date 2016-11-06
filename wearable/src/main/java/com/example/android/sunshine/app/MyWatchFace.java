@@ -328,19 +328,19 @@ public class MyWatchFace extends CanvasWatchFaceService {
             String newText = mAmbient
                     ? String.format("")
                     : String.format("%d %s %d, %s",date, sMonth, year, weekDay);
-            canvas.drawText(newText, mXOffset-20, mYOffsetRound, mDatePaint);
+            canvas.drawText(newText, mXOffset - 20, mYOffsetRound, mDatePaint);
 
 
             if(!isInAmbientMode()){
                 String sMinTemp = String.valueOf((int)minTemp);
-                canvas.drawText(sMinTemp+"\u00b0C", mXOffset+120, mYOffset+140, mDatePaint);
+                canvas.drawText(sMinTemp+"\u00b0C", mXOffset + 120, mYOffset + 140, mDatePaint);
                 String sMaxTemp = String.valueOf((int)maxTemp);
-                canvas.drawText(sMaxTemp+"\u00b0C", mXOffset+120, mYOffset+190, mDatePaint);
+                canvas.drawText(sMaxTemp+"\u00b0C", mXOffset + 120, mYOffset + 190, mDatePaint);
             }
 
             int weatherID = getWeatherIcon(wearID);
             Bitmap weatherIcon = BitmapFactory.decodeResource(getResources(), weatherID);
-            canvas.drawBitmap(weatherIcon, mXOffset-40, mYOffset+100, mTextPaint);
+            canvas.drawBitmap(weatherIcon, mXOffset - 40, mYOffset + 100, mTextPaint);
         }
 
         public void getMonth(int month)
